@@ -1,9 +1,13 @@
 {
-    "builds": [
+    "routes": [
       {
-        "src": "home.html",
-        "use": "@vercel/static"
-      }
+        "src": "/",
+        "dest": "/"
+      },
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
     ]
   }
   
