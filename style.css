@@ -34,6 +34,35 @@ body{
     text-align: left;
 }
 
+/* index_ar navbar*/
+
+#navbar_AR{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#navbar_AR .navbar{
+  background-color: #17122a;
+  padding-right: 50px !important;
+}
+
+#navbar_AR .navbar-brand img{
+  width: 200px;
+  padding-left: 50px;
+}
+
+.navbar-nav li{
+  padding: 0 10px;
+}
+
+.navbar-nav li a{
+  color: #fff !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+
 .fa-bars{
     color: #fff;
     font-size: 30px !important;
@@ -75,7 +104,7 @@ body{
     width: 114.8%;
 }
 
-#banner p img {
+.img_EN {
     max-width: 100%;
     height: auto;
     display: block;
@@ -86,7 +115,24 @@ body{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  #banner p  img:hover {
+  .img_EN:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.7);
+  }
+
+
+  .img_AR {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 47px; /* Adjust the value as needed for the desired roundness */
+    transform: perspective(1000px) rotateY(20deg) rotateX(7deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .img_AR:hover {
     transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
     box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.7);
   }
